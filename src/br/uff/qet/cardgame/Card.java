@@ -4,9 +4,9 @@ public class Card {
     private Suit suit;
     private Rank value;
 
-    public Card(Suit suit, Rank value) {
+    public Card(Rank value) {
         this.value = value;
-        this.suit = suit;
+        this.suit = Suit.CLUBS;
     }
 
     public Suit getSuit(){

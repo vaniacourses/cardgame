@@ -1,10 +1,11 @@
 package br.uff.qet.cardgame;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Player {
 
-    private ArrayList<Card> hand;
+    private List<Card> hand;
     private String name;
 
     public Player(String name){
@@ -19,6 +20,10 @@ public class Player {
 
     public int countHand(){
         return hand.size();
+    }
+    
+    public Card getCard(int posicao) {
+    	return this.hand.remove(posicao);
     }
 
     public int getHandValue(){

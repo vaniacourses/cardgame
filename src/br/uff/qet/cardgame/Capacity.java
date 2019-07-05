@@ -1,6 +1,5 @@
 package br.uff.qet.cardgame;
 
-public enum Rank {
-
+public class Capacity {
 
 }
